@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: black;
+
+  display: grid;
+  place-items: center;
+}
+
+#time {
+  color: black;
+
+  font-family: 'Rubik Mono One', sans-serif;
+  font-size: 8rem;
+
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+  filter: drop-shadow(white 0px 0px 0px);
+
+  transition: all 60s;
+}
+#time.filled {
+  color: white;
+  filter: drop-shadow(white 0px 0px 64px);
+}
